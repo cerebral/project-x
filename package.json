@@ -10,6 +10,28 @@
     "packages/*"
   ],
   "devDependencies": {
-    "lerna": "^2.8.0"
+    "@types/jest": "^22.0.1",
+    "jest": "^22.1.4",
+    "lerna": "^2.8.0",
+    "mock-socket": "^7.1.0",
+    "ts-jest": "^22.0.1",
+    "typescript": "^2.6.2"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
   }
 }
